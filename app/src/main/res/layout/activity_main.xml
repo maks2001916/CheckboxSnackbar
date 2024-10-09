@@ -12,26 +12,15 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
             <EditText
+                android:id="@+id/edit_text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:layout_constraintBottom_toTopOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"/>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/layout_resultTV"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
+                app:layout_constraintTop_toTopOf="parent"
+                android:gravity="center"/>
 
             <TextView
                 android:id="@+id/resultTV"
@@ -40,17 +29,10 @@
                 android:textSize="45dp"
                 android:text="@string/result"
                 app:layout_constraintBottom_toTopOf="parent"
-                app:layout_constraintEnd_toEndOf="@id/layout_resultTV"
-                app:layout_constraintStart_toStartOf="@id/layout_resultTV"
-                app:layout_constraintTop_toTopOf="parent"/>
-        </LinearLayout>
-
-
-        <LinearLayout
-            android:id="@+id/layout_save_dataBTN"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_gravity="center"/>
 
             <Button
                 android:id="@+id/save_dataBTN"
@@ -58,30 +40,21 @@
                 android:layout_height="wrap_content"
                 android:text="@string/save_data"
                 app:layout_constraintBottom_toTopOf="parent"
-                app:layout_constraintEnd_toEndOf="@id/layout_save_dataBTN"
-                app:layout_constraintStart_toStartOf="@id/layout_save_dataBTN"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_weight="0.1"/>
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/layout_endBTN"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
+                android:layout_gravity="center"/>
 
         <Button
-            android:id="@+id/endBTN"
+            android:id="@+id/deleteBTN"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/exit"
-            app:layout_constraintBottom_toTopOf=""
+            android:text="@string/delete"
+            app:layout_constraintBottom_toTopOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"/>
-        </LinearLayout>
-
-
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_gravity="center"/>
 
     </LinearLayout>
 

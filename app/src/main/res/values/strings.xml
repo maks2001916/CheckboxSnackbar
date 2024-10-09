@@ -1,6 +1,8 @@
 <resources>
     <string name="app_name">Checkbox Snackbar</string>
-    <string name="exit">Выход</string>
+    <string name="delete">Удалить</string>
     <string name="result">Результат</string>
     <string name="save_data">Сохранить данные</string>
+    <string name="confirmation">Подтвердите удаление</string>
+    <string name="data_has_been_deleted">Данные удалены</string>
 </resources>
